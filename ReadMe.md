@@ -5,11 +5,11 @@
 - Run `cd user` to navigate to working directory
 - Run the virtual environment [steps](#create-and-activate-virtual-environment)
 - Run `pip install -r requirements.txt` to install the required packages within your activated environment
-- Copy env.example to .env file on a bash terminal `cp env.example .env`
+- Copy env.example to .env file on a bash terminal `cp .env.example .env`
 - Run `python -c 'import secrets; print(secrets.token_urlsafe(16))'` in the terminal to generate secret key and replace with **SECRET_KEY** value in the .env
 - Run MySQL Setup [steps](#setup-mysql-database)
 - Run the flask migration [steps](#migration)
-- Run the app from the terminal `python run.py`
+- Run the app from the terminal `flask run`
 
 ## Create and activate virtual environment
 
