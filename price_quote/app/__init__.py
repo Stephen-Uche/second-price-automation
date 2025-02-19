@@ -114,8 +114,8 @@ def create_flask_app(config_class)-> Flask:
 
         migrate.init_app(app, sqlalchemy)
         usecase_factory = UsecaseFactory(sqlalchemy_adapater)
-        # pricing_quote = PricingQuote(usecase_factory)
-	PricingQuote(usecase_factory)
+        pricing_quote = PricingQuote(usecase_factory)
+        #PricingQuote(usecase_factory)
 
         rest_adapter = usecase_factory.create_request()
         register_routes(rest_adapter)
