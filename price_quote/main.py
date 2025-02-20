@@ -12,8 +12,7 @@ dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
 if os.path.exists(dotenv_path):
     load_dotenv(dotenv_path)
 else: 
-    print("No .env file found")
-    print("exiting application")
+    print("No .env file found", "exiting application")
     sys.exit()
 
 if __name__ == '__main__':
