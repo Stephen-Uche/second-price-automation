@@ -13,7 +13,7 @@ from apifairy import body, response, other_responses
 from .db import sqlalchemy, ma
 
 def setup_log():
-    dt = datetime.now() 
+    dt = datetime.now()
     date_format = dt.strftime("%Y-%m-%d")
     logs_path = pathlib.Path(__file__).parent.resolve() / "logs"
 
